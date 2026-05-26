@@ -10,7 +10,7 @@
 
 using namespace std;
 
-// Ernesto Cuadros
+// Ernesto Cuadros-Vargas
 // g++ -std=c++2b main.cpp util.cpp -o main
 int main() {
     // DemoFunctions();
