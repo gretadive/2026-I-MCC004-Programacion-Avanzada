@@ -1,7 +1,9 @@
 #include <iostream> // cout, cin, endl
 #include <fstream>  // ofstream
+#include <sstream>
 #include "Pointers.h"
-#include "util.h"
+#include "matrix1.h"
+#include "util.h" 
 #include "array1.h"
 #include "array2.h"
 #include "array3.h"
@@ -226,5 +228,21 @@ void DemoPointersVector5(){
     ofs << array5 ;
 }
 
-void DemoPointersMatrix1(){
+void DemoPointersMatrix1()
+{
+    cout << "\nDemo de matriz dinamica con doble puntero\n";
+
+    Matrix1<int> matriz;
+
+    istringstream datos("2 3 1 3 5 7 9 11");
+
+    datos >> matriz;
+
+    cout << "\nMatriz original:\n";
+    cout << matriz;
+
+    matriz.ApplyFunctionToAll(AddX<int>, 4, 1);
+
+    cout << "\nMatriz despues de sumar 4 y 1:\n";
+    cout << matriz;
 }

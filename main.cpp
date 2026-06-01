@@ -1,17 +1,16 @@
 #include <iostream>
-#include <math.h>
-#include "complex.h"
-#include "functions.h"
-#include "util.h"
-#include "BitSigno.h"
-#include "polimorfismo.h"
+#include <fstream>
+#include <sstream>
 #include "Pointers.h"
-#include "BitSigno.h"
+#include "matrix1.h"
+#include "util.h" 
+#include "array1.h"
+#include "array2.h"
+#include "array3.h"
+#include "array4.h"
 
 using namespace std;
 
-// Ernesto Cuadros
-// g++ -std=c++2b main.cpp util.cpp -o main
 int main() {
     // DemoFunctions();
     // DemoComplex();
@@ -21,7 +20,10 @@ int main() {
     // DemoPointersVector1();
     // DemoPointersVector2();
     // DemoPointersVector3();
-    DemoPointersVector4();
-    DemoPointersVector5();
+    // DemoPointersVector4();
+    // DemoPointersVector5();
+
+    DemoPointersMatrix1();  
+
     return 0;
 }
