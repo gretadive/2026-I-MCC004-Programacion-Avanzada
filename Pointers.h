@@ -8,7 +8,9 @@ void DemoPointersVector3();
 void DemoPointersVector4();
 void DemoPointersVector5();
 
-void DemoPointersMatrix1();
-void DemoPointersMatrix2();
+//void DemoPointersMatrix1();
+//void DemoPointersMatrix2();
+
+void DemoPointersMoveConstructor();
 
 #endif // __POINTERS_H__

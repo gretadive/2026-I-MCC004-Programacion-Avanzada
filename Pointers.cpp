@@ -1,6 +1,8 @@
 #include <iostream> // cout, cin, endl
 #include <fstream>  // ofstream
+#include <sstream>
 #include "Pointers.h"
+#include "matrix1.h"
 #include "util.h"
 #include "array1.h"
 #include "array2.h"
@@ -227,4 +229,41 @@ void DemoPointersVector5(){
 }
 
 void DemoPointersMatrix1(){
+}
+
+void DemoPointersMoveConstructor()
+{
+    cout << "\nDemo de matrices con constructores\n";
+
+    Matrix1<int> m1;
+    Matrix1<int> m2;
+    Matrix1<int> m3;
+    Matrix1<int> m4;
+
+    istringstream datosM2("2 2 2 1 4 0");
+    istringstream datosM3("2 2 1 2 0 1");
+    istringstream datosM4("2 2 3 1 2 4");
+
+    datosM2 >> m2;
+    datosM3 >> m3;
+    datosM4 >> m4;
+
+    cout << "\nMatriz m2:\n";
+    cout << m2;
+
+    cout << "\nMatriz m3:\n";
+    cout << m3;
+
+    cout << "\nMatriz m4:\n";
+    cout << m4;
+
+    Matrix1<int> copia(m2);
+
+    cout << "\nCopia de m2:\n";
+    cout << copia;
+
+    m1 = 5*m2 + m3*m4;
+
+    cout << "\nResultado de m1 = 5*m2 + m3*m4:\n";
+    cout << m1;
 }
